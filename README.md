@@ -42,7 +42,7 @@ It will start a gatsby dev server using which will watch, build (in-memory), and
 
 ## Production
 
-In order to generate a dist bundle you can use the following commands:
+In order to generate a distribution bundle you can use the following commands:
 
 ```bash
 # build for production with minification
