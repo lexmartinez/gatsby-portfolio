@@ -1,0 +1,52 @@
+nav.navbar
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(12,12,12, 0.5);
+    height: 70px;
+
+    .header
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 150px;
+        margin-right: 150px;
+
+        @media (max-width: 900px)
+            margin-top: -22px
+
+        h1.title
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            flex-grow: 1;
+            font-family: Poppins;
+            color: #fcfcfc;
+
+            span.subtitle
+                font-size: 16px;
+                letter-spacing: -1px;
+                font-weight: 400;
+                margin-left: 5px;
+        
+        ul.menu
+            list-style: none;
+            display: block;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+            li
+                float: left;
+
+                a
+                    display: block;
+                    color: #fcfcfc;
+                    text-align: center;
+                    padding: 16px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: Poppins;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                    &:hover
+                        color: #f7be16;

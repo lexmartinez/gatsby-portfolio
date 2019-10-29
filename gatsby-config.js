@@ -1,9 +1,22 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Lex Martínez | FullStack Javascript Developer`,
+  },
+  plugins: [ 'gatsby-plugin-sass', 'gatsby-plugin-dark-mode', 'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      options: {
+        fonts: [
+          {
+            family: 'Poppins',
+            variants: ['300', '400', '500', '700', '800']
+          },
+          {
+            family: 'Muli',
+            variants: ['300', '400', '500', '700', '800']
+          }
+        ],
+      },
+    }
+  ],
 }
