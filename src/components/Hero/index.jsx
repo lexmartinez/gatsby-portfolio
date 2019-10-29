@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { FiArrowDown, FiGithub, FiMail, FiTwitter, FiPaperclip } from 'react-icons/fi/'
 import { FaArrowDown } from 'react-icons/fa/'
 
 const Hero = (props) => {
@@ -11,6 +12,12 @@ const Hero = (props) => {
           <h1>FullStack</h1>
           <h1><strong>Node JS</strong> | <strong>React JS</strong></h1>
           <h1>Developer</h1>
+          <ul className={'socials'}>
+            <li><a href={'mailto:me@lexmartinez.com'} target={'_blank'}><FiMail size={32}/></a></li>
+            <li><a href={'https://github.com/lexmartinez'} target={'_blank'}><FiGithub size={32}/></a></li>
+            <li><a href={'#'} target={'_blank'}><FiPaperclip size={32} /></a></li>
+            <li><a href={'https://twitter.com/lex0316'} target={'_blank'}><FiTwitter size={32}/></a></li>
+          </ul>
           <button onClick={scrollToContent} aria-label={'scroll'}>
             <FaArrowDown />
           </button>

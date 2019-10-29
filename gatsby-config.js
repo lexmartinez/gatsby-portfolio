@@ -10,10 +10,6 @@ module.exports = {
           {
             family: 'Poppins',
             variants: ['300', '400', '500', '700', '800']
-          },
-          {
-            family: 'Muli',
-            variants: ['300', '400', '500', '700', '800']
           }
         ],
       },
