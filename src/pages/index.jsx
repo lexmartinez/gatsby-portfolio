@@ -2,15 +2,14 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
-import Hero from '../components/Hero'
-import NavBar from '../components/NavBar'
+import { Hero, NavBar, AboutMe, Projects, Blog, Contact } from '../components'
 import '../themes/style.sass'
 
 class Index extends React.Component {
 
-    services = React.createRef();
-    portfolio = React.createRef();
+    hero = React.createRef();
     about = React.createRef();
+    portfolio = React.createRef();
     blog = React.createRef();
     contact = React.createRef();
 
@@ -20,7 +19,8 @@ class Index extends React.Component {
     }
 
     scrollToContent(item) {
-        !!item && item.current.scrollIntoView({ block: 'start', behavior: 'smooth' });
+        const { current } = { ...item }
+        !!current && current.scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
 
     render() {
@@ -29,8 +29,7 @@ class Index extends React.Component {
         const { siteMetadata: metadata = {} } = { ...site }
         const { title = '' } = { ...metadata }
         const refs = {
-            services: this.services, portfolio: this.portfolio,
-            about: this.about, blog: this.blog, contact: this.contact
+            hero: this.hero, portfolio: this.portfolio, about: this.about, blog: this.blog, contact: this.contact
         }
         return (
         <div>
@@ -39,12 +38,16 @@ class Index extends React.Component {
                 <title>{title}</title>
             </Helmet>
             <NavBar refs={refs} scrollToContent={this.scrollToContent}/>
-            <Hero scrollToContent={this.scrollToContent.bind(this, this.services)} />
-            <span className={'separator'} ref={this.services} />
-            <span className={'separator'} ref={this.portfolio} />
+            <span className={'separator'} ref={this.hero} />
+            <Hero scrollToContent={this.scrollToContent.bind(this, this.about)} />
             <span className={'separator'} ref={this.about} />
+            <AboutMe/>
+            <span className={'separator'} ref={this.portfolio} />
+            <Projects/>
             <span className={'separator'} ref={this.blog} />
+            <Blog/>
             <span className={'separator'} ref={this.contact} />
+            <Contact/>
         </div>
         )
     }
