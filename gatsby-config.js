@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Lex Martínez | FullStack Javascript Developer`,
   },
-  plugins: [ 'gatsby-plugin-sass', 'gatsby-plugin-dark-mode', 'gatsby-plugin-react-helmet',
+  plugins: [ 'gatsby-plugin-sass', 'gatsby-plugin-react-helmet', 'gatsby-transformer-json',
     {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
       options: {
@@ -13,6 +13,13 @@ module.exports = {
           }
         ],
       },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`
+      }
     }
   ],
 }

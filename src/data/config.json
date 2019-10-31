@@ -1,0 +1,14 @@
+{
+    "hero": {
+        "title": "Hi, I'm Lex!",
+        "tags": ["Node JS", "React JS"],
+        "subtitle": "Developer"
+    },
+    "footer": "2019 Lex Martínez",
+    "socials": {
+        "github": "lexmartinez",
+        "twitter": "lex0316",
+        "linkedin": "#",
+        "email": "me@lexmartinez.com"
+    }
+}

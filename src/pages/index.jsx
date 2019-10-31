@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
-import { Hero, NavBar, AboutMe, Projects, Blog, Contact } from '../components'
+import { Hero, NavBar, AboutMe, Projects, Blog, Contact, Footer } from '../components'
 import '../themes/style.sass'
 
 class Index extends React.Component {
@@ -25,21 +25,21 @@ class Index extends React.Component {
 
     render() {
         const { data } = this.props
-        const { site = {} } = { ...data }
+        const { site = {}, config = {} } = { ...data }
         const { siteMetadata: metadata = {} } = { ...site }
         const { title = '' } = { ...metadata }
         const refs = {
             hero: this.hero, portfolio: this.portfolio, about: this.about, blog: this.blog, contact: this.contact
         }
         return (
-        <div>
+        <React.Fragment>
             <Helmet>
                 <meta charSet={'utf-8'}/>
                 <title>{title}</title>
             </Helmet>
             <NavBar refs={refs} scrollToContent={this.scrollToContent}/>
             <span className={'separator'} ref={this.hero} />
-            <Hero scrollToContent={this.scrollToContent.bind(this, this.about)} />
+            <Hero scrollToContent={this.scrollToContent.bind(this, this.about)} config={config} />
             <span className={'separator'} ref={this.about} />
             <AboutMe/>
             <span className={'separator'} ref={this.portfolio} />
@@ -48,7 +48,8 @@ class Index extends React.Component {
             <Blog/>
             <span className={'separator'} ref={this.contact} />
             <Contact/>
-        </div>
+            <Footer config={config}/>
+        </React.Fragment>
         )
     }
 
@@ -61,6 +62,20 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    config: dataJson {
+      hero {
+        subtitle
+        tags
+        title
+      }
+      footer
+      socials {
+        github
+        twitter
+        linkedin
+        email
       }
     }
   }

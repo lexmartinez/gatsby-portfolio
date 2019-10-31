@@ -22,6 +22,6 @@ const NavBar = (props) => {
     );
 };
 
-NavBar.propTypes = { scrollToContent: PropTypes.func.isRequired, refs: PropTypes.object.isRequired, current: PropTypes.object };
+NavBar.propTypes = { scrollToContent: PropTypes.func.isRequired, refs: PropTypes.object.isRequired };
 
 export default NavBar;
