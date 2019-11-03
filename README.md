@@ -26,8 +26,7 @@ go to [http://localhost:8000](http://localhost:8000) in your browser.
 ## Table of Contents
 
 - [Development](#development)
-- [Building](#building)
-- [Deployment](#deployment)
+- [Production](#Production)
 - [License](#license)
 
 ## Developing
@@ -50,10 +49,6 @@ In order to generate a distribution bundle you can use the following commands:
 # build for production with minification
 yarn build
 ```
-
-## Deployment
-
-....
 
 ## License
 
