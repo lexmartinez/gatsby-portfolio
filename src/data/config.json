@@ -4,11 +4,19 @@
         "tags": ["Node JS", "React JS"],
         "subtitle": "Developer"
     },
+    "about": {
+        "title": "Hello There!",
+        "contents": [
+            "I'm a full-stack Javascript Developer based in Medellín, Colombia, with 7+ years of experience building web/mobile apps. The last two years i've been working as mobile developer.",
+            "Passionate to turn great ideas and needs into awesome solutions and delightful products, always learning cool stuff in order to give them a new approach make it them uniques."
+        ]
+    },
+    "blog": "https://dev.to/lexmartinez",
     "footer": "2019 Lex Martínez",
     "socials": {
         "github": "lexmartinez",
         "twitter": "lex0316",
-        "linkedin": "#",
+        "linkedin": "lexmartinez",
         "email": "me@lexmartinez.com"
     }
 }

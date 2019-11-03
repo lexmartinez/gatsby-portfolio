@@ -10,14 +10,14 @@ const Hero = (props) => {
     return (
       <React.Fragment>
         <section className={'hero'}>
-          <h1>{title}</h1>
-          <h1>{tags.map((tag, index) => 
-            {return <React.Fragment>
+          <h1 data-sal={'fade'} data-sal-delay={300} data-sal-easing={'ease'}>{title}</h1>
+          <h1 data-sal={'fade'} data-sal-delay={300} data-sal-easing={'ease'}>{tags.map((tag, index) => 
+            {return <React.Fragment key={index}>
                 <strong>{tag}</strong>
                 { index < tags.length - 1 && <span> | </span>}
               </React.Fragment>})}
           </h1>
-          <h1>{subtitle}</h1>
+          <h1 data-sal={'fade'} data-sal-delay={300} data-sal-easing={'ease'}>{subtitle}</h1>
           <Socials data={socials} size={32}/>
           <button onClick={scrollToContent} aria-label={'scroll'}>
             <FaArrowDown />
