@@ -44,7 +44,7 @@ class Index extends React.Component {
             <span className={'separator'} ref={this.portfolio} />
             <Projects/>
             <span className={'separator'} ref={this.contact} />
-            <Contact/>
+            <Contact config={config}/>
             <Footer config={config}/>
         </React.Fragment>
         )
@@ -78,6 +78,11 @@ export const query = graphql`
         twitter
         linkedin
         email
+      }
+      contact {
+        title
+        subtitle
+        text
       }
     }
   }
