@@ -40,6 +40,8 @@ It will start a gatsby dev server using which will watch, build (in-memory), and
 
 > Keep all formatted with prettier, using the command`yarn format`
 
+All content data is handled via GraphQL and `config.json` file, any content change should be made there.
+
 ## Production
 
 In order to generate a distribution bundle you can use the following commands:
