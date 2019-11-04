@@ -19,9 +19,85 @@
         "linkedin": "lexmartinez",
         "email": "hello@lexmartinez.com"
     },
+    "projects": {
+        "featured": {
+            "title": "Recent Work",
+            "subtitle": "Some Things I've Built",
+            "items": [
+                {
+                    "title": "Académico",
+                    "description": "Allows students and instructors of Staff Academy handle them courses, tasks and knowledge.",
+                    "image": "https://images.unsplash.com/photo-1571233734173-2803c57a28c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                    "type": "Web App",
+                    "tags": ["React JS", "Node JS"]
+                },
+                {
+                    "title": "Hola Guapa",
+                    "description": "Beauty places directory, saloons, clinics, etc, allow it customers search, locate different business that offers desired services.",
+                    "image": "https://images.unsplash.com/photo-1567749453681-0cd3ea17f0bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                    "type": "Mobile App",
+                    "tags": ["React Native"]
+                },
+                {
+                    "title": "Roadside Services Management",
+                    "description": "Allows the operative team of B911 dispatch and schedule its roadside services.",
+                    "image": "https://images.unsplash.com/photo-1567688237058-7d0352d95080?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                    "type": "Web App",
+                    "tags": ["Node JS", "Angular", "Bootstrap"]
+                }
+            ]
+        },
+        "others": {
+            "title": "Open Source Projects",
+            "items": [
+                {
+                    "title": "Tomahawk",
+                    "description": "A mobile video game library app, using IGDB API and built with React Native and Redux",
+                    "type": "Mobile App",
+                    "link": "https://github.com/lexmartinez/tomahawk-app",
+                    "tags": ["React Native", "Redux"]
+                },
+                {
+                    "title": "Planify",
+                    "description": "Planning Poker® Desktop application, allow invite team members, and manage user stories and estimation.",
+                    "type": "Desktop App",
+                    "link": "https://github.com/lexmartinez/planning-poker",
+                    "tags": ["React JS", "Electron", "TypeScript", "I18N"]
+                },
+                {
+                    "title": "vue-github-activity",
+                    "description": "A component that creates a feed panel with your recent GitHub activity. It displays the user's data and a list of each individual activity type.",
+                    "type": "NPM Component",
+                    "link": "https://www.npmjs.com/package/vue-github-activity",
+                    "tags": ["Vue JS", "Github API"]
+                },
+                {
+                    "title": "logcat-viewer",
+                    "description": "An user friendly ADB Logcat viewer written in React and NodeJS. Tool for Android Developers.",
+                    "type": "NPM Component",
+                    "link": "https://www.npmjs.com/package/logcat-viewer",
+                    "tags": ["React JS", "Node JS"]
+                },
+                {
+                    "title": "ocr-electron-vue",
+                    "description": "Simple desktop OCR App built with Electron, Vue.js & Tesseract.js as part of my Vue/Electron case of study.",
+                    "type": "Desktop App",
+                    "link": "https://www.npmjs.com/package/vue-github-activity",
+                    "tags": ["Vue JS", "Electron", "Tesseract.js"]
+                },
+                {
+                    "title": "conference-app",
+                    "description": "A reusable conference/event App built with React Native.",
+                    "type": "Mobile App",
+                    "link": "https://github.com/lexmartinez/conference-app",
+                    "tags": ["React Native", "Redux"]
+                }
+            ]
+        } 
+    },
     "contact": {
         "title": "So, do we build awesome stuff together?",
         "subtitle": "Let's get in touch",
-        "text": "If you have a web or mobile app idea in mind, feel free to contact me. Currently i'm available to work as freelance developer, i'll be glad to work with you!"
+        "text": "If you have a web or mobile app idea in mind, feel free to contact me. Currently i'm available for new exciting projects, i'll be glad to work with you!"
     }
 }
