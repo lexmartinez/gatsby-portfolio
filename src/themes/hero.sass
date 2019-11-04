@@ -31,6 +31,14 @@
     height: 100vh;
     padding: 40px;
     padding-top: 100px;
+    
+    @media (max-width: 900px) and (orientation: portrait)
+          padding: 20px;
+          padding-top: 30px;
+
+    @media (max-width: 900px) and (orientation: landscape)
+          padding: 20px;
+          padding-top: 50px;
 
     h1
         text-align: center;
@@ -40,6 +48,11 @@
         line-height: 0.9;
         font-weight: 400;
         letter-spacing: 5px;
+
+        @media (max-width: 900px)
+          font-size: 2em;
+          letter-spacing: 1px;
+          line-height: 0.4;
 
         strong
           font-weight: 600;
@@ -55,6 +68,9 @@
         cursor: pointer;
         width: 80px;
         height: 80px;
+
+        @media (max-width: 900px) and (orientation: landscape)
+          display: none;
 
         &:focus
             outline: 0;

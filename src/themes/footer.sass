@@ -15,6 +15,11 @@ section.footer
         flex-grow: 1;
         margin-left: 50px;
 
+        @media (max-width: 900px)
+            font-size: 0.75em;
+            margin-left: 0px;
+            text-align: center;
+
     ul.socials
         list-style: none;
         display: block;
@@ -22,6 +27,9 @@ section.footer
         padding: 0;
         overflow: hidden;
         margin-right: 50px;
+
+        @media (max-width: 900px) and (orientation: portrait)
+            display: none;
 
         li
             float: left;

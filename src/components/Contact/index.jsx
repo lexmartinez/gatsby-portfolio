@@ -19,4 +19,6 @@ const Contact = (props) => {
     );
 };
 
+Contact.propTypes = { config: PropTypes.object.isRequired };
+
 export default Contact;

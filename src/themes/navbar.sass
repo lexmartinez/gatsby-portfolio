@@ -13,7 +13,8 @@ nav.navbar
         margin-right: 150px;
 
         @media (max-width: 900px)
-            margin-top: -22px
+            margin-left: 20px;
+            margin-right: 10px;
 
         h1.title
             text-transform: uppercase;
@@ -37,6 +38,9 @@ nav.navbar
             margin: 0;
             padding: 0;
             overflow: hidden;
+
+            @media (max-width: 900px) and (orientation: portrait)
+                display: none;
 
             li
                 float: left;
@@ -62,6 +66,10 @@ nav.navbar-scroll
 
     .header
 
+        @media (max-width: 900px)
+            margin-left: 20px;
+            margin-right: 10px;
+
         h1.title
             color: rgb(40,55,65);
 
@@ -80,6 +88,9 @@ nav.navbar-scroll
             margin: 0;
             padding: 0;
             overflow: hidden;
+
+            @media (max-width: 900px) and (orientation: portrait)
+                display: none;
 
             li
                 float: left;
