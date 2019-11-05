@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
     return (
       <React.Fragment>
         <a href={link} target={!!link && '_blank'}>
-            <div className={'project-card'} data-sal={'slide-up'} data-sal-delay={400} data-sal-easing={'ease'}>
+            <div className={'project-card'} data-sal={'slide-up'} data-sal-delay={200} data-sal-easing={'ease'}>
                 {!!image && <div className={'card-image'} style={{ background: `url(${image}) 100%`}}/>}
                 <div className={'card-info'}>
                     <p className={'card-type'}>{type}</p>

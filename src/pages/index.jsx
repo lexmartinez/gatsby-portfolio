@@ -34,6 +34,7 @@ class Index extends React.Component {
         <React.Fragment>
             <Helmet>
                 <meta charSet={'utf-8'}/>
+                <meta name={'viewport'} content={'width=device-width, initial-scale=1.0, viewport-fit=cover'}></meta>
                 <title>{title}</title>
             </Helmet>
             <NavBar refs={refs} scrollToContent={this.scrollToContent} config={config}/>

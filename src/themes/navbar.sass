@@ -46,7 +46,7 @@ nav.navbar
             &:focus
                 outline: 0;
 
-            @media (max-width: 900px)
+            @media (max-width: 900px) and (orientation: portrait)
                 display: block;
         
         ul.menu
@@ -103,9 +103,6 @@ nav.navbar-scroll
             color: rgb(40,55,65);
             background: 'transparent';
             height: 100%;
-
-            @media (max-width: 900px) and (orientation: landscape)
-                display: none;
 
         ul.menu
             list-style: none;

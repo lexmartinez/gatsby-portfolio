@@ -7,7 +7,7 @@
     "about": {
         "title": "Hello There!",
         "contents": [
-            "I'm a full-stack Javascript Developer based in Medellín, Colombia, with 7+ years of experience building web/mobile apps. The last two years i've been working as mobile developer.",
+            "I'm a full-stack Javascript Developer based in Medellín, Colombia, with 7+ years of experience building web/mobile apps. The last two years I've been working as mobile developer.",
             "Passionate to turn great ideas and needs into awesome solutions and delightful products, always learning cool stuff in order to give them a new approach make it them uniques."
         ]
     },
@@ -98,6 +98,6 @@
     "contact": {
         "title": "So, do we build awesome stuff together?",
         "subtitle": "Let's get in touch",
-        "text": "If you have a web or mobile app idea in mind, feel free to contact me. Currently i'm available for new exciting projects, i'll be glad to work with you!"
+        "text": "If you have a web or mobile app idea in mind, feel free to contact me. Currently I'm available for new exciting projects, I'll be glad to work with you!"
     }
 }

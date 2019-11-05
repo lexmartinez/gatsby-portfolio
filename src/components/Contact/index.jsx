@@ -9,7 +9,7 @@ const Contact = (props) => {
     return (
       <React.Fragment>
         <section className={'contact'}>
-         <div data-sal={'fade'} data-sal-delay={300} data-sal-easing={'ease'}></div>
+         <div data-sal={'fade'} data-sal-delay={200} data-sal-easing={'ease'}></div>
           <h1>{title}</h1>
           <h3>{subtitle}</h3>
           <p>{text}</p>
