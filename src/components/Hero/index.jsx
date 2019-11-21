@@ -10,6 +10,7 @@ const Hero = (props) => {
     return (
       <React.Fragment>
         <section className={'hero'}>
+          <div className={'overlay'}/>
           <h1 data-sal={'fade'} data-sal-delay={200} data-sal-easing={'ease'}>{title}</h1>
           <h1 data-sal={'fade'} data-sal-delay={200} data-sal-easing={'ease'}>{tags.map((tag, index) => 
             {return <React.Fragment key={index}>

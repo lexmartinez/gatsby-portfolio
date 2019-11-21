@@ -27,21 +27,21 @@
                 {
                     "title": "Académico",
                     "description": "Allows students and instructors of Staff Academy handle them courses, tasks and knowledge.",
-                    "image": "https://images.unsplash.com/photo-1571233734173-2803c57a28c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                    "image": "/01.jpg",
                     "type": "Web App",
                     "tags": ["React JS", "Node JS"]
                 },
                 {
                     "title": "Hola Guapa",
                     "description": "Beauty places directory, saloons, clinics, etc, allow it customers search, locate different business that offers desired services.",
-                    "image": "https://images.unsplash.com/photo-1567749453681-0cd3ea17f0bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                    "image": "/07.jpg",
                     "type": "Mobile App",
                     "tags": ["React Native"]
                 },
                 {
                     "title": "Roadside Services Management",
                     "description": "Allows the operative team of B911 dispatch and schedule its roadside services.",
-                    "image": "https://images.unsplash.com/photo-1567688237058-7d0352d95080?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                    "image": "/05.jpg",
                     "type": "Web App",
                     "tags": ["Node JS", "Angular", "Bootstrap"]
                 }
