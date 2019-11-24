@@ -9,13 +9,13 @@ const Socials = (props) => {
       <React.Fragment>
         <ul className={'socials'}>
             {!!email && <li>
-                <a href={`mailto:${email}`} target={'_blank'}><FiMail size={size}/></a></li>}
+                <a href={`mailto:${email}`} target={'_blank'} aria-label={'Email'}><FiMail size={size}/></a></li>}
             {!!github && <li>
-                <a href={`https://github.com/${github}`} target={'_blank'}><FiGithub size={size}/></a></li>}
+                <a href={`https://github.com/${github}`} target={'_blank'} aria-label={'Github'}><FiGithub size={size}/></a></li>}
             {!!linkedin && <li>
-                <a href={`https://co.linkedin.com/in/${linkedin}`} target={'_blank'}><FiLinkedin size={size} /></a></li>}
+                <a href={`https://co.linkedin.com/in/${linkedin}`} target={'_blank'} aria-label={'LinkedIn'}><FiLinkedin size={size} /></a></li>}
             {!!twitter && <li>
-                <a href={`https://twitter.com/${twitter}`} target={'_blank'}><FiTwitter size={size}/></a></li>}
+                <a href={`https://twitter.com/${twitter}`} target={'_blank'} aria-label={'Twitter'}><FiTwitter size={size}/></a></li>}
         </ul>
       </React.Fragment>
     );

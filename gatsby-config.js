@@ -33,6 +33,12 @@ module.exports = {
         icon: `static/favicon.png`
       },
     },
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en'
+      }
+    },
     'gatsby-plugin-offline'
   ],
 }

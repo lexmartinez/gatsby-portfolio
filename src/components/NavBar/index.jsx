@@ -40,7 +40,7 @@ const NavBar = (props) => {
                 <h1 className={'title'}
                   onClick={scrollToContent.bind(this, hero)}>Lex Martinez<span className={'subtitle'}>.com</span></h1>
                   {renderMenu()}
-                <button className={'menu-button'} onClick={toogleMenu}>
+                <button className={'menu-button'} onClick={toogleMenu} aria-label={'Toggle Menu'}>
                   <FiMenu size={30} />
                 </button>
             </div>
