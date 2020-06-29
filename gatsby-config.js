@@ -1,26 +1,35 @@
 module.exports = {
   siteMetadata: {
-    title: `Lex Martínez | FullStack Javascript Developer`,
+    title: `Lex Martínez`,
+    description: `Freelance Javascript Developer`,
+    author: `@lexmartinez`,
   },
-  plugins: [ 'gatsby-plugin-sass', 'gatsby-plugin-react-helmet', 'gatsby-transformer-json', 'gatsby-plugin-scroll-reveal', 
+  plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
       options: {
         fonts: [
           {
-            family: 'Poppins',
-            variants: ['300', '400', '500', '700', '800']
-          }
+            family: 'Libre Baskerville',
+            variants: ['400', '500', '700'],
+          },
+          {
+            family: 'Anonymous Pro',
+            variants: ['400', '700'],
+          },
         ],
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data`
-      }
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -30,15 +39,9 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#0D4F8B`,
         display: `standalone`,
-        icon: `static/favicon.png`
+        icon: `src/images/favicon.png`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-html-attributes',
-      options: {
-        lang: 'en'
-      }
-    },
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
 }

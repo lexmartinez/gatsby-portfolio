@@ -1,33 +1,49 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import Socials from '../Socials'
-import { FaArrowDown } from 'react-icons/fa/'
+import { graphql, StaticQuery } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
+import './styles.css'
 
-const Hero = (props) => {
-    const { scrollToContent, config = {} } = props;
-    const { socials = {}, hero = {} } = { ...config }
-    const { title = '', subtitle = '', tags = [] } = { ...hero }
-    return (
-      <React.Fragment>
-        <section className={'hero'}>
-          <div className={'overlay'}/>
-          <h1 data-sal={'fade'} data-sal-delay={200} data-sal-easing={'ease'}>{title}</h1>
-          <h1 data-sal={'fade'} data-sal-delay={200} data-sal-easing={'ease'}>{tags.map((tag, index) => 
-            {return <React.Fragment key={index}>
-                <strong>{tag}</strong>
-                { index < tags.length - 1 && <span> | </span>}
-              </React.Fragment>})}
-          </h1>
-          <h1 data-sal={'fade'} data-sal-delay={200} data-sal-easing={'ease'}>{subtitle}</h1>
-          <Socials data={socials} size={32}/>
-          <button onClick={scrollToContent} aria-label={'scroll'}>
-            <FaArrowDown />
-          </button>
-        </section>
-      </React.Fragment>
-    );
-};
-
-Hero.propTypes = { scrollToContent: PropTypes.func.isRequired, config: PropTypes.object.isRequired };
-
-export default Hero;
+export default () => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          desktop: file(relativePath: { eq: "hero-background.jpg" }) {
+            childImageSharp {
+              fluid(quality: 90, maxWidth: 1920) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
+      `}
+      render={(data) => {
+        const imageData = data.desktop.childImageSharp.fluid
+        return (
+          <BackgroundImage
+            Tag={'div'}
+            className={'hero'}
+            fluid={imageData}
+            backgroundColor={'#fff'}
+            style={{
+              backgroundPositionY: '100%',
+              backgroundPositionX: '110%',
+              backgroundSize: 'contain',
+            }}
+          >
+            <div className={'container'}>
+              <h1>lex martinez.</h1>
+              <h2>[Node JS | React JS] Developer</h2>
+              <hr />
+              <p>
+                (n.) javascript developer based in Medellín, CO, with 9+ years
+                of experience building web/mobile apps. Currently working as
+                freelance building awesome stuff.
+              </p>
+            </div>
+          </BackgroundImage>
+        )
+      }}
+    />
+  )
+}
