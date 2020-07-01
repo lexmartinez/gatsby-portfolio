@@ -36,9 +36,9 @@ export default () => {
               <h2>[Node JS | React JS] Developer</h2>
               <hr />
               <p>
-                (n.) javascript developer based in Medellín, CO, with 9+ years
-                of experience building web/mobile apps. Currently working as
-                freelance building awesome stuff.
+                (n.) <b>1. </b>javascript developer based in Medellín, CO, with
+                9+ years of experience building web/mobile apps. <b>2. </b>
+                Currently working as freelance building awesome stuff.
               </p>
             </div>
           </BackgroundImage>

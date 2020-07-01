@@ -18,6 +18,10 @@ module.exports = {
             family: 'Anonymous Pro',
             variants: ['400', '700'],
           },
+          {
+            family: 'Rubik',
+            variants: ['300', '400', '500', '700'],
+          },
         ],
       },
     },

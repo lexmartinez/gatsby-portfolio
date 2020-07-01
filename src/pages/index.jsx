@@ -1,12 +1,12 @@
 import React from 'react'
-import { SEO, Hero } from '@components'
+import { SEO, Hero, Footer } from '@components'
 
 export default () => {
   return (
     <>
       <SEO title="Home" />
       <Hero />
-      <div className={'placeholder-x'} />
+      <Footer />
     </>
   )
 }

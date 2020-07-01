@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  font-family: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .hero {
   width: 100vw;
@@ -9,9 +10,9 @@ body {
   align-items: flex-start;
   justify-content: center;
   overflow-y: hidden;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(168, 168, 168, 0.52);
-  -moz-box-shadow: 0px 2px 2px 0px rgba(168, 168, 168, 0.52);
-  box-shadow: 0px 2px 2px 0px rgba(168, 168, 168, 0.52);
+  /*-webkit-box-shadow: 0px 2px 2px 0px rgba(168, 168, 168, 0.22);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(168, 168, 168, 0.22);
+  box-shadow: 0px 2px 2px 0px rgba(168, 168, 168, 0.22);*/
 }
 
 .hero > .container {
@@ -107,8 +108,8 @@ body {
   }
 }
 
-.placeholder-x {
+/*.placeholder-x {
   width: 100vw;
   height: 100vh;
-  background-color: #f6f8fe;
-}
+  background-color: #232222;
+}*/
